@@ -20,8 +20,9 @@
 <meta property="og:image" content="https://i.imgur.com/pZB3SbK.png">
 <meta property="og:image" content="https://i.imgur.com/nfTptAp.png">
 <meta property="article:published_time" content="2021-06-05T14:07:23.000Z">
-<meta property="article:modified_time" content="2021-06-05T14:43:38.163Z">
+<meta property="article:modified_time" content="2021-06-05T14:58:52.547Z">
 <meta property="article:author" content="GaryChen">
+<meta property="article:tag" content="教學">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://i.imgur.com/6PgAFYW.png">
   
@@ -104,14 +105,14 @@
       
         <p>建立個人blog的動機，比起的個人心得分享，更多的是看越來越多朋友建立了自己的blog，心裡就很想跟著玩玩。<br>本篇作為blog第一篇文，就先把整個blog的建立流程記錄起來，以防自己忘記。<br>本文主要參考自<a target="_blank" rel="noopener" href="https://blog.jaojaolin.com/%E8%BB%9F%E9%AB%94%E8%88%87%E7%B3%BB%E7%B5%B1/2020-05-06-Hexo-GitPage-%E6%90%AD%E5%BB%BA-Blog-%E6%95%99%E5%AD%B8/">這裡</a>。</p>
 <p>個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows cmd。</p>
-<p>Github Pages只支援靜態網頁設計，基本上就是html,css,javascript等，所以只能拿來寫寫部落格或放一些文件，與使用者做互動編譯的動態網頁將無法成功顯示。</p>
+<p>Github Pages只支援靜態網頁設計，基本上就是html, css, javascript等，所以只能拿來寫寫部落格或放一些文件，與使用者做互動編譯的動態網頁將無法成功顯示。</p>
 <h1 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h1><h2 id="Github-Repo"><a href="#Github-Repo" class="headerlink" title="Github Repo"></a>Github Repo</h2><p>先在<a target="_blank" rel="noopener" href="https://github.com/">Github</a>上建立個人Repo，取名做<code>&lt;username&gt;.github.io</code>，<username>填入個人帳號。可見<a target="_blank" rel="noopener" href="https://github.com/Ergodica10002/Ergodica10002.github.io">這裡</a>。<br>接著將Repo clone到本地端，個人還是習慣在terminal上運作git。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span><br><span class="line"><span class="built_in">cd</span> &lt;username&gt;.github.io.git</span><br></pre></td></tr></table></figure>
 <p>接著可以在Repo內新增<code>index.html</code>，commit+push上去後，應該就能在<code>https://&lt;username&gt;.github.io</code>上看到剛剛編輯的內容了。</p>
 <p>另外到Github上個人的Repo裡，點選Settings-&gt;Pages，可以看到Choose a Theme，裡面已有許多Github預設的主題可以使用。</p>
 <p><img src="https://i.imgur.com/6PgAFYW.png"></p>
 <p>底下還可以修改domain，不過目前也沒這需求，維持原本的github.io就好XD。</p>
-<h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>Hexo是個簡單的部落格建立軟體，支援Markdown編輯。雖然是基於Node.js，但個人目前還沒碰過javascript，照著指示也還是完成了。<br>首先先安裝<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a>(node package manager)。是專屬Node.js的套件管理工具。</p>
+<h2 id="安裝Hexo"><a href="#安裝Hexo" class="headerlink" title="安裝Hexo"></a>安裝Hexo</h2><p>Hexo是個簡單的部落格建立軟體，支援Markdown編輯。雖然是基於Node.js，但個人目前還沒碰過javascript，照著指示也還是完成了。<br>首先先安裝<a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a>(node package manager)，這是專屬Node.js的套件管理工具。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update</span><br><span class="line">sudo apt install npm</span><br></pre></td></tr></table></figure>
 <p>可透過<code>npm --version</code>確認安裝是否成功。</p>
 <p><img src="https://i.imgur.com/hkYW6vk.png"></p>
@@ -126,10 +127,9 @@
 <ul>
 <li><code>node_modules/</code>: 透過npm安裝的套件會放在這邊。</li>
 <li><code>scaffolds/</code>: 新增貼文的模板。</li>
-<li><code>source/</code>: 新增貼文的原始碼。Markdown 和 HTML 檔案會被處理並放到<code>public</code>資料夾(等等介紹)。</li>
+<li><code>source/</code>: 新增貼文的原始碼。Markdown 和 HTML 檔案會被處理並放到<code>public</code>資料夾(等等會介紹)。</li>
 <li><code>themes</code>: 貼文的主題。</li>
-<li><code>_config.yml</code>: 網站的設定檔</li>
-<li><code>package-lock.json</code>:  </li>
+<li><code>_config.yml</code>: 網站的設定檔 </li>
 <li><code>package.json</code>: 應用程式的相關資料</li>
 </ul>
 <h2 id="設定網頁資訊"><a href="#設定網頁資訊" class="headerlink" title="設定網頁資訊"></a>設定網頁資訊</h2><p>選擇任意editor打開<code>_config.yml</code>。個人使用sublime。<br>修改網站的基本內容，如圖。</p>
@@ -148,7 +148,7 @@
 <p><img src="https://i.imgur.com/pZB3SbK.png"></p>
 <p>接著透過<code>nvm ls-remote</code>，確認要安裝的版本，個人是安裝LTS。透過<code>nvm install &lt;version&gt;</code>安裝</p>
 <p><img src="https://i.imgur.com/nfTptAp.png"></p>
-<p>現在重新<code>hexo generate</code>應該就可以了。</p>
+<p>現在重新<code>hexo generate</code>應該就可以了。這步驟會將在<code>source</code>裡的<code>Markdown</code>和<code>HTML</code>檔案處理，並放到<code>public</code>資料夾，而<code>public</code>裡就是最後網頁呈現的結果。</p>
 <h2 id="新增文章"><a href="#新增文章" class="headerlink" title="新增文章"></a>新增文章</h2><p>以下透過<code>Markdown</code>語法新增文章。選擇文章標題<code>&quot;title&quot;</code>。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">&quot;title&quot;</span></span><br></pre></td></tr></table></figure>
 <p>接著可以在<code>blog/source/_posts</code>看到<code>title.md</code>檔案，編輯後<code>hexo generate</code>就能產生相關網頁文件。</p>
@@ -166,6 +166,8 @@
       
       
       
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li></ul>
+
     </footer>
   </div>
   
@@ -192,9 +194,23 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%99%E5%AD%B8/" rel="tag">教學</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">標籤雲</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E6%95%99%E5%AD%B8/" style="font-size: 10px;">教學</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
