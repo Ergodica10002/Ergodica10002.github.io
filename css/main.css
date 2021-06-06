@@ -3067,3 +3067,17 @@ mark.search-keyword {
     margin-bottom: 10px;
   }
 }
+body {
+  background: url("/images/rainbow.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+.main-inner {
+  background: #fff;
+  opacity: 0.95;
+}
+.header-inner {
+  opacity: 0.95;
+}
