@@ -1,7 +1,10 @@
 ---
 title: "[教學]用Github Pages+Hexo建立網站分享"
-date: 2021-06-05 22:07:23
-tags: "教學"
+date: 2021-06-06 12:47:23
+categories: "教學"
+tags: 
+   - "Github Pages"
+   - "Hexo"
 ---
 
 建立個人blog的動機，比起的個人心得分享，更多的是看越來越多朋友建立了自己的blog，心裡就很想跟著玩玩。
