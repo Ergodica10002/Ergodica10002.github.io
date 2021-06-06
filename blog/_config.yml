@@ -5,7 +5,7 @@
 # Site
 title: Gary Chen's Blog
 subtitle: ''
-description: 'Some experience and thoughts to share'
+description: 'Some experiences, works and thoughts to share'
 keywords:
 author: Gary Chen
 language: zh-TW
@@ -97,7 +97,14 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
+
+# 文章搜尋功能
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
