@@ -1,5 +1,5 @@
 ---
-title: "[教學]用Github Pages+Hexo建立網站分享"
+title: "[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog"
 date: 2021-06-06 12:47:23
 categories: "教學"
 tags: 
@@ -13,7 +13,11 @@ tags:
 
 個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows cmd。
 
+{% note info %} 
 Github Pages只支援靜態網頁設計，基本上就是html, css, javascript等，所以只能拿來寫寫部落格或放一些文件，與使用者做互動編譯的動態網頁將無法成功顯示。
+{% endnote %}
+
+<!--more-->
 
 # Prerequisite
 ## Github Repo
