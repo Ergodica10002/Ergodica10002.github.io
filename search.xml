@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog</title>
+    <title>[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog</title>
     <url>/2021/06/06/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)/</url>
     <content><![CDATA[<p>建立個人blog的動機，比起的個人心得分享，更多的是看越來越多朋友建立了自己的blog，心裡就很想跟著玩玩。<br>本篇作為blog第一篇文，就先把整個blog的建立流程記錄起來，以防自己忘記。<br>本文主要參考自<a href="https://blog.jaojaolin.com/%E8%BB%9F%E9%AB%94%E8%88%87%E7%B3%BB%E7%B5%B1/2020-05-06-Hexo-GitPage-%E6%90%AD%E5%BB%BA-Blog-%E6%95%99%E5%AD%B8/">這裡</a>。</p>
 <p>個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows cmd。</p>
@@ -38,7 +38,7 @@
 </ul>
 <h2 id="設定網頁資訊"><a href="#設定網頁資訊" class="headerlink" title="設定網頁資訊"></a>設定網頁資訊</h2><p>選擇任意editor打開<code>_config.yml</code>。個人使用sublime。<br>修改網站的基本內容，如圖。</p>
 <p><img src="https://i.imgur.com/HtjNHA4.png"></p>
-<p>可以自己置換相關的資訊。<br>接著為了讓網站內容deploy到Github Page上，要在<code>_config.yml</code>最後加上底下資訊。</p>
+<p>可以自己置換相關的資訊。<br>接著為了讓網站內容deploy到Github Pages上，要在<code>_config.yml</code>最後加上底下資訊。</p>
 <p><img src="https://i.imgur.com/10zjCUM.png"></p>
 <h2 id="產生檔案"><a href="#產生檔案" class="headerlink" title="產生檔案"></a>產生檔案</h2><p>將整份專案編譯產生靜態檔案，編譯完後檔案會存在<code>blog/public</code>底下。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="comment"># 可先用hexo clean清理目前資料夾中的靜態網頁</span></span><br><span class="line">hexo generate <span class="comment"># or hexo g</span></span><br></pre></td></tr></table></figure>
@@ -72,7 +72,7 @@
       </tags>
   </entry>
   <entry>
-    <title>[教學]用Github Pages+Hexo建立網站分享(2)--NEXT主題</title>
+    <title>[教學]用GitHub Pages+Hexo建立網站分享(2)--NEXT主題</title>
     <url>/2021/06/07/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(2)/</url>
     <content><![CDATA[<p>自建立部落後，又花了不少時間更新內容。這邊就記錄下最近完成的內容。</p>
 <p>另外有個心得是，每次更新頁面設定一定要從頭進行<code>git clean</code>,<code>git generate</code>，否則<code>git deploy</code>後的結果可能會出錯，有機會會和<code>git server</code>不同。另外檢查網站更新情況可以用<code>Ctrl+F5</code>取代單純的<code>F5</code>，確保資料是重新獲取而不是來自cache。</p>
@@ -80,7 +80,7 @@
 <span id="more"></span>
 
 <h1 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h1><ul>
-<li><a href="/2021/06/06/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)/" title="[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog">[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog</a></li>
+<li><a href="/2021/06/06/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)/" title="[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog">[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog</a></li>
 </ul>
 <h1 id="設定tags-categories"><a href="#設定tags-categories" class="headerlink" title="設定tags, categories"></a>設定tags, categories</h1><p>進入個人網站的根目錄，依序輸入指令。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line">hexo new page categories</span><br></pre></td></tr></table></figure>

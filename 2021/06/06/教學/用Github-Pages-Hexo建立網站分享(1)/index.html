@@ -22,7 +22,7 @@
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;ergodica10002.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Pisces&quot;,&quot;version&quot;:&quot;8.5.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:true,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜尋...&quot;,&quot;empty&quot;:&quot;我們無法找到任何有關 ${query} 的搜索結果&quot;,&quot;hits_time&quot;:&quot;${hits} 找到 ${time} 個結果&quot;,&quot;hits&quot;:&quot;找到 ${hits} 個結果&quot;},&quot;path&quot;:&quot;&#x2F;search.xml&quot;,&quot;localsearch&quot;:{&quot;enable&quot;:true,&quot;trigger&quot;:&quot;auto&quot;,&quot;top_n_per_article&quot;:1,&quot;unescape&quot;:false,&quot;preload&quot;:false}}</script><script src="/js/config.js"></script>
 <meta name="description" content="建立個人blog的動機，比起的個人心得分享，更多的是看越來越多朋友建立了自己的blog，心裡就很想跟著玩玩。本篇作為blog第一篇文，就先把整個blog的建立流程記錄起來，以防自己忘記。本文主要參考自這裡。 個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows c">
 <meta property="og:type" content="article">
-<meta property="og:title" content="[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog">
+<meta property="og:title" content="[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog">
 <meta property="og:url" content="https://ergodica10002.github.io/2021/06/06/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)/index.html">
 <meta property="og:site_name" content="Gary Chen&#39;s Blog">
 <meta property="og:description" content="建立個人blog的動機，比起的個人心得分享，更多的是看越來越多朋友建立了自己的blog，心裡就很想跟著玩玩。本篇作為blog第一篇文，就先把整個blog的建立流程記錄起來，以防自己忘記。本文主要參考自這裡。 個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows c">
@@ -46,10 +46,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-TW&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;ergodica10002.github.io&#x2F;2021&#x2F;06&#x2F;06&#x2F;%E6%95%99%E5%AD%B8&#x2F;%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;06&#x2F;06&#x2F;教學&#x2F;用Github-Pages-Hexo建立網站分享(1)&#x2F;&quot;,&quot;title&quot;:&quot;[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-TW&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;ergodica10002.github.io&#x2F;2021&#x2F;06&#x2F;06&#x2F;%E6%95%99%E5%AD%B8&#x2F;%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;06&#x2F;06&#x2F;教學&#x2F;用Github-Pages-Hexo建立網站分享(1)&#x2F;&quot;,&quot;title&quot;:&quot;[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog | Gary Chen's Blog</title>
+<title>[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog | Gary Chen's Blog</title>
   
 
 
@@ -253,7 +253,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          [教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog
+          [教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog
         </h1>
 
         <div class="post-meta-container">
@@ -351,7 +351,7 @@
 </ul>
 <h2 id="設定網頁資訊"><a href="#設定網頁資訊" class="headerlink" title="設定網頁資訊"></a>設定網頁資訊</h2><p>選擇任意editor打開<code>_config.yml</code>。個人使用sublime。<br>修改網站的基本內容，如圖。</p>
 <p><img src="https://i.imgur.com/HtjNHA4.png"></p>
-<p>可以自己置換相關的資訊。<br>接著為了讓網站內容deploy到Github Page上，要在<code>_config.yml</code>最後加上底下資訊。</p>
+<p>可以自己置換相關的資訊。<br>接著為了讓網站內容deploy到Github Pages上，要在<code>_config.yml</code>最後加上底下資訊。</p>
 <p><img src="https://i.imgur.com/10zjCUM.png"></p>
 <h2 id="產生檔案"><a href="#產生檔案" class="headerlink" title="產生檔案"></a>產生檔案</h2><p>將整份專案編譯產生靜態檔案，編譯完後檔案會存在<code>blog/public</code>底下。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 可先用hexo clean清理目前資料夾中的靜態網頁</span></span><br><span class="line">hexo generate <span class="comment"># or hexo g</span></span><br></pre></td></tr></table></figure>
@@ -394,8 +394,8 @@
             <div class="post-nav-item">
             </div>
             <div class="post-nav-item">
-                <a href="/2021/06/07/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(2)/" rel="next" title="[教學]用Github Pages+Hexo建立網站分享(2)--NEXT主題">
-                  [教學]用Github Pages+Hexo建立網站分享(2)--NEXT主題 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/06/07/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(2)/" rel="next" title="[教學]用GitHub Pages+Hexo建立網站分享(2)--NEXT主題">
+                  [教學]用GitHub Pages+Hexo建立網站分享(2)--NEXT主題 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
