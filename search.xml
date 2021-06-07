@@ -6,6 +6,8 @@
     <content><![CDATA[<p>自建立部落後，又花了不少時間更新內容。這邊就記錄下最近完成的內容。</p>
 <p>另外有個心得是，每次更新頁面設定一定要從頭進行<code>git clean</code>,<code>git generate</code>，否則<code>git deploy</code>後的結果可能會出錯，有機會會和<code>git server</code>不同。另外檢查網站更新情況可以用<code>Ctrl+F5</code>取代單純的<code>F5</code>，確保資料是重新獲取而不是來自cache。</p>
 <p>這篇主要是如何使用NexT主題的基本介紹，個人使用版本是NexT 8.5.0。詳細內容與demo可以參考NexT的<a href="https://theme-next.js.org/">blog</a>。<br>另外本篇內容主要參考自<a href="https://ed521.github.io/2020/05/hexo-next-upgrade/">網站</a>。</p>
+<span id="more"></span>
+
 <h1 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h1><ul>
 <li><a href="/2021/06/06/%E6%95%99%E5%AD%B8/%E7%94%A8Github-Pages-Hexo%E5%BB%BA%E7%AB%8B%E7%B6%B2%E7%AB%99%E5%88%86%E4%BA%AB(1)/" title="[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog">[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog</a></li>
 </ul>
@@ -77,6 +79,8 @@
 <p>個人建立環境是Windows10+wsl2的Ubuntu 20.04。大部分流程都是在Windows Terminal上完成的，所以基本上都是用Linux指令，完全沒有使用到Windows cmd。</p>
 <div class="note info"><p>Github Pages只支援靜態網頁設計，基本上就是html, css, javascript等，所以只能拿來寫寫部落格或放一些文件，與使用者做互動編譯的動態網頁將無法成功顯示。</p>
 </div>
+
+<span id="more"></span>
 
 <h1 id="Prerequisite"><a href="#Prerequisite" class="headerlink" title="Prerequisite"></a>Prerequisite</h1><h2 id="Github-Repo"><a href="#Github-Repo" class="headerlink" title="Github Repo"></a>Github Repo</h2><p>先在<a href="https://github.com/">Github</a>上建立個人Repo，取名做<code>&lt;username&gt;.github.io</code>，<username>填入個人帳號。可見<a href="https://github.com/Ergodica10002/Ergodica10002.github.io">這裡</a>。<br>接著將Repo clone到本地端，個人還是習慣在terminal上運作git。</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/&lt;username&gt;/&lt;username&gt;.github.io.git</span><br><span class="line"><span class="built_in">cd</span> &lt;username&gt;.github.io.git</span><br></pre></td></tr></table></figure>
