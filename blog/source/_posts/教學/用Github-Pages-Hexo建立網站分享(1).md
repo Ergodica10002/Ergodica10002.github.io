@@ -1,6 +1,7 @@
 ---
-title: "[教學]用Github Pages+Hexo建立網站分享(1)--建立個人blog"
+title: "[教學]用GitHub Pages+Hexo建立網站分享(1)--建立個人blog"
 date: 2021-06-06 12:47:23
+updated: 2021-06-07 22:50:00
 categories: "教學"
 tags: 
    - "Github Pages"
@@ -78,7 +79,7 @@ npm install
 ![](https://i.imgur.com/HtjNHA4.png)
 
 可以自己置換相關的資訊。
-接著為了讓網站內容deploy到Github Page上，要在`_config.yml`最後加上底下資訊。
+接著為了讓網站內容deploy到Github Pages上，要在`_config.yml`最後加上底下資訊。
 
 ![](https://i.imgur.com/10zjCUM.png)
 

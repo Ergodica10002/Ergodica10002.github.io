@@ -1,12 +1,13 @@
 ---
-title: "[教學]用Github Pages+Hexo建立網站分享(2)--NEXT主題"
+title: "[教學]用GitHub Pages+Hexo建立網站分享(2)--NEXT主題"
 date: 2021-06-07 16:43:17
+updated: 2021-06-14 14:27:00
 categories: "教學"
 tags: 
    - "Github Pages"
    - "Hexo"
 ---
-自建立部落後，又花了不少時間更新內容。這邊就記錄下最近完成的內容。
+自建立部落格後，又花了不少時間更新內容。這邊就記錄下最近完成的內容。
 
 另外有個心得是，每次更新頁面設定一定要從頭進行`git clean`,`git generate`，否則`git deploy`後的結果可能會出錯，有機會會和`git server`不同。另外檢查網站更新情況可以用`Ctrl+F5`取代單純的`F5`，確保資料是重新獲取而不是來自cache。
 
@@ -59,7 +60,6 @@ title: {{ title }}
 date: {{ date }}
 cetegories:
 tags:
-	-
 ---
 ```
 # 設定主題NexT
