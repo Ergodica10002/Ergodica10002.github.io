@@ -93,7 +93,7 @@
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title:</span><br><span class="line">date:</span><br><span class="line">categories: &quot;教學&quot;</span><br><span class="line">tags: </span><br><span class="line">   - &quot;Github Pages&quot;</span><br><span class="line">   - &quot;Hexo&quot;</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <p>這樣可以讓這篇文章新增在<code>教學</code>這個category下，且帶有<code>Github Pages</code>,<code>Hexo</code>這兩個tag。</p>
 <p>另外可以修改<code>/scaffolds/post.md</code>，讓每次新增文章<code>hexo new post</code>時，都帶有category與tag的設定。</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">cetegories:</span><br><span class="line">tags:</span><br><span class="line">	-</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">date: &#123;&#123; date &#125;&#125;</span><br><span class="line">cetegories:</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
 <h1 id="設定主題NexT"><a href="#設定主題NexT" class="headerlink" title="設定主題NexT"></a>設定主題NexT</h1><p>Hexo要新增主題很簡單，只要將該主題的Repo clone到<code>themes/</code>這個資料夾底下就可以了。欲使用<a href="https://github.com/next-theme/hexo-theme-next">NexT主題</a>，在個人的<code>blog</code>跟目錄底下使用指令</p>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/next-theme/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure>
 <p>這樣會在<code>themes/</code>底下建一個資料夾<code>next/</code>，接者進入<code>_config.yml</code>中修改使用主題成next</p>
@@ -142,5 +142,30 @@
         <tag>Github Pages</tag>
         <tag>Hexo</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>[開箱]電腦螢幕 DELL SE2416H</title>
+    <url>/2021/06/14/unboxing/%E9%9B%BB%E8%85%A6%E8%9E%A2%E5%B9%95-DELL-SE2416H/</url>
+    <content><![CDATA[<p><img src="/images/unboxing/Dell6.jpg" alt="model"></p>
+<p>(圖片來自<a href="https://www.dell.com/zh-tw/work/shop/dell-24-%E9%A1%AF%E7%A4%BA%E5%99%A8-se2416h/apd/210-alci/%E9%A1%AF%E7%A4%BA%E5%99%A8%E5%92%8C%E9%A1%AF%E7%A4%BA%E5%99%A8%E9%85%8D%E4%BB%B6">DELL網站</a>)</p>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>很早以前就聽說寫程式搭配雙螢幕會很舒適，不過由於一個人在台北宿舍搬運不易，加上也沒有非雙螢幕不可的task，就一直沒有下手。<br>直到最近開始有感覺到多開分頁的需求，像是要把matlab code轉python code，合併兩個repo裡的函式的功能等等的；由於自己會攝影修圖、偶爾也會剪片，有個獨立出來的螢幕處理這些工作顯然會更加方便。<br>於是就在前幾天終於下定決心要入手一個新的螢幕。</p>
+<span id="more"></span>
+
+<h1 id="選購前的想法："><a href="#選購前的想法：" class="headerlink" title="選購前的想法："></a>選購前的想法：</h1><p>個人第一個想法是要HDMI，除了畫質更細膩外，也是因為個人電腦就是HDMI輸出。螢幕顯示要是IPS，對於顏色與可視角的呈現比較好。螢幕大小購買前大概考慮24吋左右的，主要是不想跟筆電螢幕落差太大，整體高度希望能塞進宿舍的書桌，大概是抓50公分以下。廠牌沒特別要求，只要是大廠都好，維修會比較方便。<br>除此之外的其他功能沒特別的想法，基本上是挑選滿足上述條件的商品中最便宜的。</p>
+<p>於是來到順發3C，經過仔細挑選後選擇了這款 <strong>DELL SE2416H</strong>。</p>
+<h1 id="型號規格"><a href="#型號規格" class="headerlink" title="型號規格"></a>型號規格</h1><p>直接上圖(來自<a href="https://www.dell.com/zh-tw/work/shop/dell-24-%E9%A1%AF%E7%A4%BA%E5%99%A8-se2416h/apd/210-alci/%E9%A1%AF%E7%A4%BA%E5%99%A8%E5%92%8C%E9%A1%AF%E7%A4%BA%E5%99%A8%E9%85%8D%E4%BB%B6">DELL網站</a>)。</p>
+<p><img src="/images/unboxing/Dell5.png" alt="model"></p>
+<h1 id="開箱"><a href="#開箱" class="headerlink" title="開箱"></a>開箱</h1><p>整箱外觀：</p>
+<p><img src="/images/unboxing/Dell1.jpg" alt="Dell1"></p>
+<p>箱子沒有個提手蠻不好拿的。</p>
+<p>內容物包裝很單純，螢幕放在下面一層。</p>
+<p><img src="/images/unboxing/Dell2.jpg" alt="Dell2"></p>
+<p>雖有附上說明書，不過組裝十分簡單，懶得看就直接組起來了。<br>搭配一併買的HDMI線接上筆電後的成果：</p>
+<p><img src="/images/unboxing/Dell3.jpg" alt="Dell3"></p>
+<p>整體上蠻舒適的，兩邊協調沒有不和諧的感覺。<br>螢幕選單有提供多種色彩模式，個人覺得看影片時用Movie體驗很棒。另外可以設定兩個shortcut key，我選擇亮度以及色彩模式。</p>
+<p>剛好有個需要看影片寫評論的作業，有個外接螢幕就方便了。</p>
+<p><img src="/images/unboxing/Dell4.jpg" alt="Dell4"></p>
+<h1 id="心得"><a href="#心得" class="headerlink" title="心得"></a>心得</h1><p>作為第一個外接螢幕個人還蠻滿意的，拿來看影片、編輯相片或分頁寫code，使用體驗都相當地好。雖然買完不久就被人家說“能直立的螢幕看paper會很方便”，不過想想如果要再加上其他功能，想比價錢也會再升上去，目前這樣我就十分滿足了，至於胃口會不會被養壞就之後再說吧。</p>
+]]></content>
   </entry>
 </search>
