@@ -2,7 +2,7 @@
 title: "[開箱]電腦螢幕 DELL SE2416H"
 date: 2021-06-14 14:25:13
 updated: 2021-06-14 14:25:13
-cetegories: "開箱"
+categories: "開箱"
 tags:
 ---
 ![model](/images/unboxing/Dell6.jpg)
