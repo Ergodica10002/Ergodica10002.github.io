@@ -25,7 +25,7 @@ tags:
 hexo new page tags
 hexo new page categories
 ```
-接著進入sourcevu，應該會看到新增了兩個資料夾`tags`,`categories`，裡面各有一個`index.md`，修改其中的內容。
+接著進入`source`，應該會看到新增了兩個資料夾`tags`,`categories`，裡面各有一個`index.md`，修改其中的內容。
 * tags:
 ```
 title: tags
@@ -41,7 +41,7 @@ type: "categories"
 
 接著就可以對每篇文章新增所屬的tag及category。其中tag一篇文章可以有好幾個，而categories一篇文章只能有一個。
 如範例，在文章開頭編輯:
-```
+```yaml
 ---
 title:
 date:
@@ -54,7 +54,8 @@ tags:
 這樣可以讓這篇文章新增在`教學`這個category下，且帶有`Github Pages`,`Hexo`這兩個tag。
 
 另外可以修改`/scaffolds/post.md`，讓每次新增文章`hexo new post`時，都帶有category與tag的設定。
-```
+```yaml
+# /scaffolds/post.md
 ---
 title: {{ title }}
 date: {{ date }}
@@ -64,11 +65,11 @@ tags:
 ```
 # 設定主題NexT
 Hexo要新增主題很簡單，只要將該主題的Repo clone到`themes/`這個資料夾底下就可以了。欲使用[NexT主題](https://github.com/next-theme/hexo-theme-next)，在個人的`blog`跟目錄底下使用指令
-```bash=
+```bash
 git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 這樣會在`themes/`底下建一個資料夾`next/`，接者進入`_config.yml`中修改使用主題成next
-```yaml=
+```yaml
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
@@ -80,7 +81,7 @@ theme: next
 打開`themes/next/_config.yml`。裡面可以設定使用者自己的資料。基本上每個項目都有註解教你各功能代表的意思，底下僅介紹我覺得重要的。
 ## 主題設定
 搜尋檔案找到`scheme:`
-```yaml=
+```yaml
 # Schemes
 #scheme: Muse
 #scheme: Mist
@@ -95,7 +96,7 @@ NexT設有4種scheme可以選擇(Muse,Mist,Pisces,Gemini)，取消註解即可�
 
 ## Menu設定
 搜尋檔案找到`menu:`
-```yaml=
+```yaml
 menu:
   home: / || fa fa-home
   about: /about/ || fa fa-user
@@ -110,7 +111,7 @@ menu:
 
 ## 頭像設定
 搜尋檔案找到`avatar:`
-```yaml=
+```yaml
 avatar:
   # Replace the default image and set the url here.
   url: /images/avatar.jpg
@@ -123,7 +124,7 @@ avatar:
 
 ## Social設定
 搜尋檔案找到`social:`
-```yaml=
+```yaml
 social:
   GitHub: https://github.com/Ergodica10002 || fab fa-github
   E-Mail: mailto:ergodica10002@gmail.com || fa fa-envelope
@@ -140,7 +141,7 @@ social:
 
 ## footer設定
 搜尋檔案找到`footer:`
-```yaml=
+```yaml
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
   since: 2021
@@ -167,7 +168,7 @@ footer:
 
 ## 程式碼區塊設定
 搜尋檔案找到`codeblock:`
-```yaml=
+```yaml
 codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
@@ -186,7 +187,7 @@ codeblock:
 這邊可以修改想要的程式碼樣式，底下的`copy button`設true可以讓程式碼區塊帶有copy功能。
 
 ## 右上角Github連結
-```yaml=
+```yaml
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
@@ -197,7 +198,7 @@ github_banner:
 
 ## 新增站內文章搜尋功能
 找到底下內容，將`enable`設為true。
-```yaml=
+```yaml
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
@@ -213,11 +214,11 @@ local_search:
   preload: false
 ```
 接著須至terminal上安裝工具
-```bash=
+```bash
 npm install hexo-generator-searchdb --save
 ```
 最後在blog的根目錄的`_config.yml`裡加上
-```yaml=
+```yaml
 # 文章搜尋功能
 search:
   path: search.xml
@@ -229,7 +230,7 @@ search:
 
 ## 更換背景圖片
 在next底下的`_config.yml`，取消註解掉style這句。
-```yaml=
+```yaml
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
@@ -243,7 +244,7 @@ custom_file_path:
   style: source/_data/styles.styl
 ```
 接著在blog的根目錄的`source/`新增`_data/`資料夾，在裡面新增一個檔案`styles.styl`，裡面寫入
-```
+```yaml
 body {
       background:url(/images/圖片的檔名);
       background-size: cover;
@@ -254,7 +255,7 @@ body {
 ```
 圖片要放在`themes/next/source/images`，才能成功讀取。
 另外可以在上述的`source/_data/styles.styl`檔案後面加入
-```
+```yaml
 .main-inner {
       opacity: 0.9;
 }
