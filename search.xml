@@ -545,7 +545,7 @@
   <entry>
     <title>Review of the Bitcoin White Paper</title>
     <url>/2021/10/24/%E5%BF%83%E5%BE%97/Review%20of%20the%20Bitcoin%20White%20Paper/</url>
-    <content><![CDATA[<p>This essay is a short report of the white paper – <a href="%5Bbitcoin.pdf%5D(https://bitcoin.org/bitcoin.pdf)">Bitcoin: A Peer-to-Peer Electronic Cash System</a>. It is the Satoshi Nakamoto’s well-known publishment that introduces his idea of Bitcoin. The following is an introduction of this system, and my reflections are also included. Not many details are given in this short article, and I encourage everyone who is interested in Block Chain and crypto-currency to read this famous work themselves.</p>
+    <content><![CDATA[<p>This essay is a short report of the white paper – <a href="https://bitcoin.org/bitcoin.pdf">Bitcoin: A Peer-to-Peer Electronic Cash System</a>. It is the Satoshi Nakamoto’s well-known publishment that introduces his idea of Bitcoin. The following is an introduction of this system, and my reflections are also included. Not many details are given in this short article, and I encourage everyone who is interested in Block Chain and crypto-currency to read this famous work themselves.</p>
 <span id="more"></span>
 
 <p>Bitcoin, a coin system introduced in the paper, is a new distributed ledger system which is designed to correct the problems people found in digital currency. It was early that people found convenient to expend with digital token that have credibility. However, all schemes proposed used to be vulnerable to the double-spending problem or security worries. </p>
